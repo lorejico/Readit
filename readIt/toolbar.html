@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/services/option-selected.js"></script>
+		<script src="background.js"></script>
+    <script src="js/services/createCustomToolbar.js"></script>
+		<script src="js/modals/savedChangesModal.js"></script>
+		<script src="js/modals/textModal.js"></script>
+		<script src="js/modals/imgModal.js"></script>
+		<script src="js/modals/summaryModal.js"></script>
+		<script src="js/modals/errorModal.js"></script>
+		<script src="js/modals/noResultsServiceModal.js"></script>
+		<script src="js/storage/saveChanges.js"></script>
+		<script src="js/storage/getChanges.js"></script>
+		<script src="js/storage/exportData.js"></script>
+
+  </head>
+  <body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <ul>
+      <li><input id="searchText" type="text" placeholder="Buscar..."></li>
+			<li id="Blog"><a href="#">Blog</a></li>
+      <li data-toggle="modal" data-target="#exampleModalLong" id="Definitions" class="hidableItems"><a href="#">Definiciones</a></li>
+      <li data-toggle="modal" data-target="#exampleModalLong" id="Synonyms" class="hidableItems"><a href="#">Palabras parecidas</a></li>
+      <li data-toggle="modal" data-target="#exampleModalLong" id="Antonyms" class="hidableItems"><a href="#">Palabras contrarias</a></li>
+      <li data-toggle="modal" data-target="#exampleModalLong" id="Pictograms" class="hidableItems"><a href="#">Pictogramas</a></li>
+      <li id="Youtube" class="hidableItems"><a href="#">Youtube</a></li>
+      <li id="Wikipedia" class="hidableItems"><a href="#">Wikipedia</a></li>
+			<li data-toggle="modal" data-target="#exampleModalLong" id="Summary" class="hidableItems"><a href="#">Resumen</a></li>
+			<li id="OutLoudReading" class="hidableItems"><a href="#">Lectura en voz alta</a></li>
+			<li data-toggle="modal" data-target="#exampleModalLong" id="getChangesId" style="float:right"><a href="#"><i class="fa fa-cogs"></i></a> </li>
+    </ul>
+
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 id="modalTitleId" class="modal-title">Title</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div id="modalBodyId" class="modal-body">
+		        CARGANDO
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+		        <button id="saveChangesId" type="button" class="btn btn-primary" data-dismiss="modal">Guardar</button>
+						<button id="exportChangesId" type="button" class="btn btn-primary" data-dismiss="modal">Exportar</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+  </body>
+</html>

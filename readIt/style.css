@@ -1,0 +1,84 @@
+#selectOptions{
+  width: 200px;
+}
+
+#selectOptions ul {
+  list-style-type: none;
+}
+
+#customToolbarMenu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #555;
+  height: 45px;
+  border: 0;
+}
+
+#customToolbarMenu ul {
+  list-style-type: none;
+  list-style-image:none;
+  height: 45px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 16px;
+  background-color: #555;
+}
+
+#customToolbarMenu li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+#customToolbarMenu li:last-child {
+  border-right: none;
+}
+
+#customToolbarMenu li a {
+  font-size: 18px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#customToolbarMenu li a:hover:not(.active) {
+  background-color: #111;
+}
+
+#customToolbarMenu input[type=text] {
+  margin: 0;
+  width: 200px;
+  height: 45px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  font-size: 13.5px;
+  background-color: white;
+  background-image: url('chrome-extension://__MSG_@@extension_id__/img/searchIcon.png');
+  background-position: 5px 5px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+#customToolbarMenu .active {
+  background-color: #4CAF50;
+}
+
+
+/* Important part */
+.modal-dialog{
+  overflow-y: initial !important
+}
+.modal-title{
+  font-size: 24px;
+}
+.modal-body{
+  font-size: 20px;
+  height: 250px;
+  overflow-y: auto;
+}
