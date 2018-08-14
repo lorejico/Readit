@@ -82,3 +82,14 @@
   height: 250px;
   overflow-y: auto;
 }
+
+.btn{
+  color: white;
+  font-size: 14px;
+}
+.btn-secondary {
+    background-color: red;
+}
+.btn-primary{
+    background-color: blue;
+}
